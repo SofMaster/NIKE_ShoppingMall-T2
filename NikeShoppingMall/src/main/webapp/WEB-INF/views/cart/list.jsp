@@ -25,7 +25,6 @@ font-family: 'Noto Sans KR', sans-serif;
 <body>
 <jsp:include page="/include/navbar4.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
-<<<<<<< HEAD
 	<div class="container" style="height:1100px;">
 		<div style="border-bottom:3px solid #a5a5a5; ">
 			<p style="margin-top:20px; font-size:30px;">장바구니</p>
@@ -51,7 +50,7 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 		<c:set var="total" value="0" />
 		<c:forEach var="tmp" items="${list }">
-			<div style="font-size:12px;">
+			<div style="font-size:12px; border-bottom:1px solid #9b9b9b">
 			<div class="row">
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
 					<p name="color" value="red" style="margin-top:50px;">${tmp.cart_rnum }</p>
@@ -74,7 +73,7 @@ font-family: 'Noto Sans KR', sans-serif;
 		</c:forEach>
 
 		
-			<div class="row" style="border:3px solid #c6c4c4; font-size:12px; height:70px;line-height:65px; margin-top:100px;">
+			<div class="row" style="border:3px solid #c6c4c4; font-size:12px; height:70px;line-height:65px; margin-top:250px;">
 				<div class="col-1"></div>
 				<div class="col-1" style="text-align:right;">총 상품가격</div>
 				<div class="col-1" style="font-weight:bold;text-align:left;"><c:out value="${total }"/>원</div>
